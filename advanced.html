@@ -13,10 +13,22 @@
         </div>
         <div class="search-container">
             <form action="https://www.google.com/search" method="GET">
-                <input type="text" name="as_q" placeholder="All these words">
-                <input type="text" name="as_epq" placeholder="This exact word or phrase">
-                <input type="text" name="as_oq" placeholder="Any of these words">
-                <input type="text" name="as_eq" placeholder="None of these words">
+                <div class="input-group">
+                    <label for="all-words">All these words:</label>
+                    <input type="text" id="all-words" name="as_q">
+                </div>
+                <div class="input-group">
+                    <label for="exact-phrase">Exact word or phrase:</label>
+                    <input type="text" id="exact-phrase" name="as_epq">
+                </div>
+                <div class="input-group">
+                    <label for="any-words">Any of these words:</label>
+                    <input type="text" id="any-words" name="as_oq">
+                </div>
+                <div class="input-group">
+                    <label for="none-words">None of these words:</label>
+                    <input type="text" id="none-words" name="as_eq">
+                </div>
                 <input type="submit" value="Advanced Search" class="advanced-button">
             </form>
         </div>
